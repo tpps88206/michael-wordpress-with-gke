@@ -9,6 +9,7 @@ This is a guide to help you to develop your Wordpress in Google Kubernetes Engin
 ### 1. Setup your kubernetes cluster and connect
 
 Setup your kubernetes cluster at Google Kubernetes Engine.
+
 After that, connect kubernetes cluster with your kubectl.
 ```sh
 $ gcloud container clusters get-credentials yourk8s --zone asia-east1-b --project yourk8s
@@ -229,6 +230,7 @@ php_value max_input_time 300
 ### 10. Create Secret for TLS key
 
 Make sure your Wordpress is workable and finish installation.
+
 And then, you can start input TLS key.
 ```sh
 $ kubectl create secret tls yourwp-tls --key tls/wp.key --cert tls/wp.crt
@@ -262,13 +264,19 @@ Create Ingress Controller with `ingress.yaml`.
 $ kubectl create -f ingress.yaml
 ```
 Now, you can get the static IP with Ingress Controller at [GCP networking](https://console.cloud.google.com/networking/addresses/).
+
 Copy your static IP and set the DNS.
+
 After DNS is working, login the Wordpress admin and change the default URL and start with [Really Simple SSL](https://tw.wordpress.org/plugins/really-simple-ssl/)
 
 ### Reference
 
 [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
+
 [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+
 [Using Persistent Disks with WordPress and MySQL](https://cloud.google.com/kubernetes-engine/docs/tutorials/persistent-disk#deploy_mysql)
+
 [Setting up HTTP Load Balancing with Ingress](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer)
+
 [Really Simple SSL](https://tw.wordpress.org/plugins/really-simple-ssl/)

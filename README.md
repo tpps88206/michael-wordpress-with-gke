@@ -56,7 +56,7 @@ spec:
 ```
 Create Persistent Volumes for Wordpress with `wordpress-volumeclaim.yaml`.
 ```sh
-$ kubectl apply -f wordpress-volumeclaim.yaml
+$ kubectl create -f wordpress-volumeclaim.yaml
 ```
 
 ### 4. Create Secret for MySQL password

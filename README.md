@@ -1,5 +1,7 @@
 # Develop Wordpress with Google Kubernetes Engine (TLS/SSL termination)
 
+[Watch on Medium](https://michael-hsu.medium.com/%E5%9C%A8-kubernetes-%E4%B8%8A-%E4%BD%BF%E7%94%A8-persistent-disks-%E5%BB%BA%E7%BD%AE-wordpress-%E4%B8%A6%E4%BD%BF%E7%94%A8-tls-ssl-%E9%80%A3%E7%B7%9A-e1d6e6841ebd)
+
 This is a guide to help you to develop your Wordpress in Google Kubernetes Engine and with
 
   - TLS/SSL termination
